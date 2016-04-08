@@ -6,7 +6,12 @@ require 'sinatra/base'
 class ManchesterFighters < Sinatra::Base
 
 get '/' do
-  'Manchester Fighters'
+  erb :index
 end
+
+get '/fighters' do
+  erb :fighters
+end
+
 run! if app_file == $0
 end
