@@ -10,6 +10,7 @@ get '/' do
 end
 
 get '/fighters' do
+  # @fighters = Fighter.all
   erb :fighters
 end
 
